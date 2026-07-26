@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://jagdamba-mobile-shoppe-electronics.netlify.app"
+})
 @RestController
 @RequestMapping("/mobile-shop/operation")
 public class MobileController {

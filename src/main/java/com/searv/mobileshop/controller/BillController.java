@@ -10,7 +10,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/mobile-shop/bill")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://jagdamba-mobile-shoppe-electronics.netlify.app"
+})
 public class BillController {
 
     @Autowired
